@@ -6,6 +6,9 @@ package vista;
 
 import java.util.Scanner;
 import modelo.Alumno;
+import controlador.Metodos;
+import static controlador.Metodos.calcularEdad;
+import static controlador.Metodos.calcularFilaPromedio;
 
 /**
  *
@@ -60,7 +63,11 @@ public class PrincipalVista {
                 System.out.print("[" + i + "][" + j + "] -> ");
                 posicion[i][j].mostrarInfo();
             }
+            double promedioFila = calcularFilaPromedio(posicion, i, columnas);
+                System.out.println("Promedio de calificaciones en fila " + i + ": " + promedioFila);
         }
+        double promedioGrupo = calcularEdad(posicion, filas, columnas);
+        System.out.println("Promedio de edades del grupo: " + promedioGrupo);
     } 
     
     }
