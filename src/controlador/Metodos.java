@@ -60,9 +60,6 @@ public class Metodos {
                 }
             }
         }
-
-        System.out.println("El alumno más destacado es: " + alumDestacado.getNombre()
-                + " con promedio de " + alumDestacado.getPromedio());
         return alumDestacado;
     }
 }

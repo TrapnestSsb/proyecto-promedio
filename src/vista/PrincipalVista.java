@@ -71,13 +71,13 @@ public class PrincipalVista {
             System.out.println("Promedio de calificaciones en fila " + i + ": " + promedioFila);
         }
         double promedioGrupo = calcularEdad(posicion, filas, columnas);
-        System.out.println("Promedio de edades del grupo: " + promedioGrupo);
+        System.out.println("El promedio de edades del grupo: " + promedioGrupo);
         
         int filaDestacada = calcularFilaDestacada(posicion);
-        System.out.println("Fila destacada es:" + filaDestacada);
+        System.out.println("La fila destacada es:" + filaDestacada);
         
         Alumno alumnoDestacado = mostrarAlumnoMasDestacado(posicion);
-        System.out.println("Alumno destacado: " + alumnoDestacado);
+        System.out.println("El alumno destacado: " + alumnoDestacado);
         
     }
 
