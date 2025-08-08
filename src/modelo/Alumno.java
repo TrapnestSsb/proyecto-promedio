@@ -65,6 +65,14 @@ public class Alumno {
         this.cuatrimestre = cuatrimestre;
         this.promedio = promedio;
     }
+    
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre + 
+                           ", Edad: " + edad + 
+                           ", Carrera: " + carrera + 
+                           ", Cuatrimestre: " + cuatrimestre + 
+                           ", Promedio: " + promedio);
+    }
 
     @Override
     public String toString() {
